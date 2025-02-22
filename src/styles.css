@@ -20,4 +20,5 @@ body {
 #footer {
   background-image: url('../img/footer-bg.jpg.webp');
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
