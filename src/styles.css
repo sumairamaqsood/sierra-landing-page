@@ -9,6 +9,52 @@ body {
   /* background-position: 40%; */
 }
 
+/* Hamburger */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  width: 24px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+/* so yahn yh 3 lines are on top of each other  */
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+/*  so here middle one is getting little down to appear clearly */
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+/* here the last one coming down more s */
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
 @media (max-width: 576px) {
   body {
     background-size: 100% auto;

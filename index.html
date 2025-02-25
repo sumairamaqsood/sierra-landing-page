@@ -15,7 +15,7 @@
         <!--Flex container for logo and items -->
         <div class="flex items-center justify-between">
             <!--Logo-->
-            <div class="pt-2">
+            <div>
                 <img src="/img/logo.png.webp" alt="">
             </div>
             <!--Nav items-->
@@ -28,7 +28,28 @@
                 <a href="#" class="hover:text-white font-bold transition duration-300">Contact us</a>
 
             </div>
+            <!--hamburger Menu -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
         </div>
+        <!--Mobile menu-->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute open flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6  right-6 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Services </a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact us</a>
+
+            </div>
+        </div>
+
+
     </nav>
     <!--Hero section -->
     <section id="id">
@@ -120,7 +141,7 @@
             </p>
             <!-- <h1 class="text-4xl font-bold text-darkBlue text-center md:text-4xl "> We are not colleagues, but Family.
             </h1> -->
-            <div class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-10 md:space-y-0">
+            <div class="container flex flex-col md:flex-row items-center mx-auto mt-10 space-y-10 md:space-y-0">
 
                 <!--left item -->
                 <div class="flex flex-col  space-y-12  md:w-1/2">
@@ -155,8 +176,8 @@
     </section>
     <!--Contact form -->
 
-    <section id="team">
-        <!--container for left text and right images-->
+    <section id="contact">
+        <!--container for left form and right contact us now -->
         <div class="container  px-6 mx-auto mt-20 text-center  space-y-10">
             <div class="flex flex-col  md:flex-row items-center justify-center">
                 <img src="/img/title-icon.png.webp" alt="">
@@ -164,11 +185,11 @@
             <p class="flex flex-col  justify-center text-gray-600 font-bold mt-10 uppercase ">Say Hello!
             </p>
 
-            <div class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <div class="container mb-20 flex flex-col md:flex-row items-center  mx-auto mt-10 space-y-10 md:space-y-10">
 
                 <!--left item -->
-                <div class="flex flex-col mb-20 space-y-12 w-full  md:w-1/2 md:text-left">
-                    <form class="contact-form p-6  max-w-md">
+                <div class="flex flex-col  space-y-12 w-full  md:w-1/2 md:text-left">
+                    <form class="contact-form  max-w-md">
                         <div class="mb-4">
                             <input type="text"
                                 class="w-full px-1 py-4 border-b-2  focus:outline-none  focus:border-b-lightPink"
@@ -187,13 +208,22 @@
                             class="w-full bg-lightBlue border-8 border-lightBlue  text-white py-2 rounded-lg hover:bg-lightPink transition duration-300">Send</button>
                     </form>
                 </div>
-                <!--images-->
-                <div class="flex flex-wrap gap-4 justify-center md:w-1/2">
+                <!--Call us now -->
+                <div class="flex flex-col  space-y-12 md:w-1/2">
 
-                    <img src="/img/people-1.jpg.webp" class="w-[25%] h-70 object-cover " alt="">
-                    <img src="/img/people-2.jpg.webp" class="w-[25%] h-50 object-cover " alt="">
-                    <img src="/img/people-3.jpg.webp" class="w-[25%] h-50 object-cover " alt="">
-                    <img src="/img/people-4.jpg.webp" class="w-[25%] h-50 object-cover" alt="">
+                    <h5 class="max-w-md text-2xl font-bold text-center text-darkBlue md:text-3xl md:text-left">
+                        Get in
+                        touch, send us an e-mail or call us</h5>
+                    <p class="max-w-sm text-center text-gray-600 font-bold md:text-left">Cras ex mauris, ornare eget
+                        pretium
+                        sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a
+                        orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra.
+                    </p>
+                    <p class="flex flex-col   text-lightBlue font-bold mt-10 uppercase md:text-left ">Call us now!
+                        (+452373 95593 232)
+                    </p>
+                    <!-- <h5 class="max-w-md text-1xl mt-5 font-bold text-center text-darkBlue md:text-2xl md:text-left">
+                        +452373 95593 232</h5> -->
                 </div>
             </div>
         </div>
@@ -203,7 +233,7 @@
     <section id="footer">
         <!--Flex container-->
         <div
-            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-5">
+            class="container mt-20 flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-5">
             <!--Logo and social links -->
             <div
                 class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
@@ -279,6 +309,9 @@
             copyright &copy; 2025. All right reserved
         </div>
     </section>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
